@@ -31,7 +31,7 @@ module.exports = async () => {
     fromBlock: currentBlockNumber,
   };
 
-
+  /* 다이스 소켓 연결점 */
   // 관련 Web3 DOCS : # https://web3js.readthedocs.io/en/v1.7.5/web3-eth-contract.html#contract-events
   // Placed Bet WebSocket
   DiceContract.events
