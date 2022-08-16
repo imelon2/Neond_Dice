@@ -1,0 +1,186 @@
+{
+  "contractName": "IGame",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "requestId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256[]",
+          "name": "expandedValues",
+          "type": "uint256[]"
+        }
+      ],
+      "name": "settleBet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"requestId\",\"type\":\"uint256\"},{\"internalType\":\"uint256[]\",\"name\":\"expandedValues\",\"type\":\"uint256[]\"}],\"name\":\"settleBet\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interface/IGame.sol\":\"IGame\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interface/IGame.sol\":{\"keccak256\":\"0x0d273eb0f1da8dd690cf82ef1925611bb2d66f57259c619b75b8ec98bef8a9cf\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3b429313b1a7c740910ec5ec6bd4bd893e0a4f934d569746b49c3263265a111c\",\"dweb:/ipfs/QmUpix4TLyfEH8dVXbsWseecFHXbEHEGb7Lyk8XqW1taRb\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ninterface IGame {\n    function settleBet(uint256 requestId, uint256[] memory expandedValues) external;\n    // function placeBet(uint betChoiceMask,uint amount) external ;\n}",
+  "sourcePath": "/Users/choiwonhyeok/Documents/neon/back/contracts/interface/IGame.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interface/IGame.sol",
+    "exportedSymbols": {
+      "IGame": [
+        5479
+      ]
+    },
+    "id": 5480,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5470,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:28"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IGame",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5479,
+        "linearizedBaseContracts": [
+          5479
+        ],
+        "name": "IGame",
+        "nameLocation": "68:5:28",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "8cf1273a",
+            "id": 5478,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "settleBet",
+            "nameLocation": "89:9:28",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5476,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5472,
+                  "mutability": "mutable",
+                  "name": "requestId",
+                  "nameLocation": "107:9:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5478,
+                  "src": "99:17:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5471,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "99:7:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5475,
+                  "mutability": "mutable",
+                  "name": "expandedValues",
+                  "nameLocation": "135:14:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5478,
+                  "src": "118:31:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_uint256_$dyn_memory_ptr",
+                    "typeString": "uint256[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 5473,
+                      "name": "uint256",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "118:7:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "id": 5474,
+                    "nodeType": "ArrayTypeName",
+                    "src": "118:9:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_uint256_$dyn_storage_ptr",
+                      "typeString": "uint256[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "98:52:28"
+            },
+            "returnParameters": {
+              "id": 5477,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "159:0:28"
+            },
+            "scope": 5479,
+            "src": "80:80:28",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5480,
+        "src": "58:172:28",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:198:28"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.16+commit.07a7930e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-14T10:52:40.190Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

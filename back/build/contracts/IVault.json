@@ -1,0 +1,411 @@
+{
+  "contractName": "IVault",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "winnableAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "placeBet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "player",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "winnableAmount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "win",
+          "type": "bool"
+        }
+      ],
+      "name": "settleBet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "player",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "winnableAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "refundBet",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"winnableAmount\",\"type\":\"uint256\"}],\"name\":\"placeBet\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"player\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"winnableAmount\",\"type\":\"uint256\"}],\"name\":\"refundBet\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"player\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"winnableAmount\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"win\",\"type\":\"bool\"}],\"name\":\"settleBet\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interface/IVault.sol\":\"IVault\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interface/IVault.sol\":{\"keccak256\":\"0x18799e87ec0812a2d1c9de987384f3a3b136989770be2b224761709059857007\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb9bdde40db952ce085aa63eb97ab10056cdef1d562385f2e7532150dccc69a7\",\"dweb:/ipfs/QmZPmnmvSt23dSVHjaW7MhuKPrypjkRLAk9wMcQskpTvqv\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ninterface IVault {\n    // function placeBet(address player, uint amount, bool isBonus, uint nftHolderRewardsAmount, uint winnableAmount) payable external;\n    function placeBet(uint winnableAmount) external;\n    function settleBet(address player, uint winnableAmount, bool win) external;\n    function refundBet(address player, uint amount, uint winnableAmount) external;\n}",
+  "sourcePath": "/Users/choiwonhyeok/Documents/neon/back/contracts/interface/IVault.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interface/IVault.sol",
+    "exportedSymbols": {
+      "IVault": [
+        5513
+      ]
+    },
+    "id": 5514,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5489,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:30"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVault",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5513,
+        "linearizedBaseContracts": [
+          5513
+        ],
+        "name": "IVault",
+        "nameLocation": "68:6:30",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "10fe7c48",
+            "id": 5494,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "placeBet",
+            "nameLocation": "226:8:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5492,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5491,
+                  "mutability": "mutable",
+                  "name": "winnableAmount",
+                  "nameLocation": "240:14:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5494,
+                  "src": "235:19:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5490,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "235:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "234:21:30"
+            },
+            "returnParameters": {
+              "id": 5493,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "264:0:30"
+            },
+            "scope": 5513,
+            "src": "217:48:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e4339393",
+            "id": 5503,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "settleBet",
+            "nameLocation": "279:9:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5501,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5496,
+                  "mutability": "mutable",
+                  "name": "player",
+                  "nameLocation": "297:6:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5503,
+                  "src": "289:14:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5495,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "289:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5498,
+                  "mutability": "mutable",
+                  "name": "winnableAmount",
+                  "nameLocation": "310:14:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5503,
+                  "src": "305:19:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5497,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "305:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5500,
+                  "mutability": "mutable",
+                  "name": "win",
+                  "nameLocation": "331:3:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5503,
+                  "src": "326:8:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 5499,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "326:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "288:47:30"
+            },
+            "returnParameters": {
+              "id": 5502,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "344:0:30"
+            },
+            "scope": 5513,
+            "src": "270:75:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "2363f424",
+            "id": 5512,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "refundBet",
+            "nameLocation": "359:9:30",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5510,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5505,
+                  "mutability": "mutable",
+                  "name": "player",
+                  "nameLocation": "377:6:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5512,
+                  "src": "369:14:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 5504,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "369:7:30",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5507,
+                  "mutability": "mutable",
+                  "name": "amount",
+                  "nameLocation": "390:6:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5512,
+                  "src": "385:11:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5506,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5509,
+                  "mutability": "mutable",
+                  "name": "winnableAmount",
+                  "nameLocation": "403:14:30",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5512,
+                  "src": "398:19:30",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5508,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "398:4:30",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "368:50:30"
+            },
+            "returnParameters": {
+              "id": 5511,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "427:0:30"
+            },
+            "scope": 5513,
+            "src": "350:78:30",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5514,
+        "src": "58:372:30",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:398:30"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.16+commit.07a7930e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-14T10:52:40.192Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

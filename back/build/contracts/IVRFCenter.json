@@ -1,0 +1,145 @@
+{
+  "contractName": "IVRFCenter",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "sendRequestRandomness",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"sendRequestRandomness\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interface/IVRFCenter.sol\":\"IVRFCenter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interface/IVRFCenter.sol\":{\"keccak256\":\"0xc8c3c79c362098be48caeb2efbf7f4b58fad0cd4488534c6c0cd1cb81c7e20ef\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://be30a1437074426d700263ea43feeec623a806a6115425b49db404bd3e1ee682\",\"dweb:/ipfs/Qmd8H1R5P1i47tijEN5WgK3pUJJnCDxG5HcEowNzBta7qB\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.13;\n\ninterface IVRFCenter {\n    function sendRequestRandomness() external returns (uint256);\n}",
+  "sourcePath": "/Users/choiwonhyeok/Documents/neon/back/contracts/interface/IVRFCenter.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interface/IVRFCenter.sol",
+    "exportedSymbols": {
+      "IVRFCenter": [
+        5487
+      ]
+    },
+    "id": 5488,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5481,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:24:29"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IVRFCenter",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 5487,
+        "linearizedBaseContracts": [
+          5487
+        ],
+        "name": "IVRFCenter",
+        "nameLocation": "68:10:29",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "functionSelector": "485ba9f0",
+            "id": 5486,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "sendRequestRandomness",
+            "nameLocation": "94:21:29",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 5482,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "115:2:29"
+            },
+            "returnParameters": {
+              "id": 5485,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5484,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 5486,
+                  "src": "136:7:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5483,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "136:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "135:9:29"
+            },
+            "scope": 5487,
+            "src": "85:60:29",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 5488,
+        "src": "58:89:29",
+        "usedErrors": []
+      }
+    ],
+    "src": "32:115:29"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.16+commit.07a7930e.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.8",
+  "updatedAt": "2022-08-14T10:52:40.191Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
